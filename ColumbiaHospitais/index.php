@@ -17,7 +17,7 @@ function validaSenha (input){
 <!DOCTYPE html>
 <html>
     <head>
-        <title>FreeConsultas - Seu jeito facil de agendar suas consultas!</title>
+        <title>Columbia Hospitais - Seu jeito facil de agendar suas consultas!</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Icone que aparece no navegador -->
@@ -36,7 +36,7 @@ function validaSenha (input){
             <table>
             <tr><td>
             <div id="txtFree" class="FontePatua FixoEsquerda">
-                    <a>FreeConsultas</a>
+                    <a>Columbia Hospitais</a>
             </div> 
             </td></tr> <!-- Termina a parte do texto -->
             
@@ -294,7 +294,7 @@ function validaSenha (input){
         </div><!-- Termina a parte do corpo -->
         
         <div id="rod">
-	<a class="FonteOswald">Site exclusivo da HospitalParticularDoJosé - Trinity Softwares © 2016</a>
+	<a class="FonteOswald">Site exclusivo Columbia Hospitais - Desenvolvido por Trinity Softwares © 2016</a>
         </div>
 
     </body>
