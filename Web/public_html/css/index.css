@@ -1,76 +1,211 @@
-body{ margin: 0px; padding: 0px; border: 0px; width: 100%; height: 100%; }
-/* background */
-#backg{ background: url("../img/bgFundo.jpg"); background-repeat: no-repeat; position:absolute; height: 850px; width: 100%; }
-/* Parte de Cima */
-#txtFree{ font-size: 60px; }
-td{ padding: 0px 8px; }
 /* Parte do Meio */
-#btnEntrar{ background-color: #c3c2c2; font-size: 16px; }
-#meio{ top: 150px; right: 322px; }
-#dia{ width: 56px; height: 29px; }
-#mes{ width: 83px; height: 29px; }
-#ano{ width: 63px; height: 29px; }
-#reg{ font-size: 18px; }
-#btnCad{ height: 32px; width: 210px; font-size: 18px; border: none; border-radius: 8px;}
-.CadTxt{ font-size: 36px;}
-/* Rodapé */
-#rod {
-    height: 25px;
-    position: absolute;
-    background-color: black;
-    text-align: center;
-    width: 100%;
-    top: 850px;
+
+#meio {
+    top: 150px;
+    right: 322px;
 }
-#rod a{ font-size: 16px; color: white; }
 
+#dia {
+    width: 56px;
+    height: 29px;
+}
 
+#mes {
+    width: 83px;
+    height: 29px;
+}
+
+#ano {
+    width: 63px;
+    height: 29px;
+}
+
+#reg {
+    font-size: 18px;
+}
+
+#btnCad {
+    height: 32px;
+    width: 210px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+}
+
+.CadTxt {
+    font-size: 36px;
+}
+
+/* Rodapé */
+
+footer {
+    height: 40px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    border-top: 1px solid buttonface;
+}
+
+/* Hovers e Focus */
+#btnEntrar:Hover {
+    background-color:#e2daa6;
+}
+
+#btnCad:Hover {
+    background-color:#e2daa6;
+}
+
+.txt2:Focus {
+    border: thin solid #e2daa6;
+    box-shadow: 0 2px 10px #e2daa6;
+}
+
+.txt:Focus {
+    border: thin solid #e2daa6;
+    box-shadow: 0 2px 10px #e2daa6;
+}
 
 /* Classes de Fontes */
-.FontePatua{
+
+.FontePatua * {
     font-family: 'Patua One', cursive;
 }
-.FonteOswald{
+
+.FonteOswald * {
     font-family: 'Oswald', sans-serif;
 }
 
 /* Classes de Heranca */
-.FixoDireita{/*deixa na direita da pagina*/
+
+/*Alinha à direita da página*/
+.FixoDireita {
     position: absolute;
     right: 20px;
 }
-.FixoEsquerda{/*deixa a esquerda da pagina*/
+
+/*Alinha à esquerda da página*/
+.FixoEsquerda {
     position: absolute;
     left: 20px;
 }
-.txt{/*arruma os inputs da parte de login*/
-    border: none; 
-    height: 30px; 
+
+/*Arruma os inputs da parte de login*/
+.txt {
+    border: none;
+    height: 30px;
     width: 200px;
-    border: thin solid #f1f1f1;
+    border: thin solid #d2d2d2;
 }
-.txt2{/*arruma is inputs da parte de cadastro*/
-    border: none; 
-    height: 29px; 
+
+/*Arruma os inputs da parte de cadastro*/
+.txt2 {
+    border: none;
+    height: 30px;
     width: 210px;
-    border: thin solid #f1f1f1;
+    border: thin solid #d2d2d2;
 }
-.txte{/*da um espaço entre as partes do cadastro*/
+
+/*Dá um espaço entre as partes do cadastro*/
+.txte {
     margin-top: 8px;
 }
-.sb{/*mexe no botao entrar*/
+
+/*Mexe no botão 'entrar'*/
+.sb {
     border: none;
     width: 70px;
     height: 30px;
     cursor: pointer;
     color: #000;
 }
-.bord{/*cria uma borda arredondada ao botoes*/
+
+/*Cria uma borda arredondada nos botões*/
+.bord {
     border: none;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
 }
-.noD /* tira o sublinhado e a cor de links*/{
+
+/* tira o sublinhado e a cor de link*/
+.noD {
     text-decoration: none;
+}
+
+/*muda a cor e a fonte de dentro dos inputs*/
+::-webkit-input-placeholder {
+   color: #d2d2d2;
+   font-family: 'Oswald', sans-serif;
+   font-size: 14px;
+}
+
+:-moz-placeholder {
+   color: #d2d2d2;
+   font-family: 'Oswald', sans-serif;
+   font-size: 14px;
+}
+
+::-moz-placeholder {
+   color: #d2d2d2;
+   font-family: 'Oswald', sans-serif;
+   font-size: 14px;
+}
+
+:-ms-input-placeholder {  
+   color: #d2d2d2;
+   font-family: 'Oswald', sans-serif;
+   font-size: 14px;
+}
+
+/* Parte das abas */
+
+main {
+    position: relative;
+    top: 150px;
+}
+
+.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 700px;
+}
+
+/* Float the list items side by side */
+.tab li {
+    float: left;
+    width: 50%;
+}
+
+/* Style the links inside the list items */
+.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 100%;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    width: 700px;
+    height: 900px;
 }

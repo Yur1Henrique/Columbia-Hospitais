@@ -6,6 +6,8 @@
         <link rel="shortcut icon" href="icone.png" type="image/x-png">
         <!-- Chamando o css -->
         <link rel="stylesheet" type="text/css" href="css/home.css">
+        <link rel="stylesheet" type="text/css" href="../css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/universal.css">
         <title></title>
     </head>
     <body>
