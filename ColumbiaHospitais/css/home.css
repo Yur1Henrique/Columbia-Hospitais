@@ -1,0 +1,268 @@
+/*GERAL RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    outline: 0 none;
+    vertical-align: baseline;
+    word-wrap: break-word;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+p span { font-size: 16px !important; }
+/*TAGS*/
+html,body {
+    width: 100%;
+    height: 100%;
+    border: 0 none;
+    background-color: #cfcfcf;
+}
+
+html { overflow-y: scroll; }
+
+a {overflow: hidden;color: #000000;font-size: 12px;text-decoration: none;}
+
+a:hover { text-decoration: underline; }
+
+hr { display: none; }
+
+optgroup option { padding-left: 15px; font-size: 13px; }
+
+optgroup { color: #000000; font-size: 13px; font-style: italic;  font-weight: bold; }
+
+img,fieldset { border: 0 none; }
+
+li { list-style: none; }
+
+table{ border-collapse: collapse; }
+
+strong{ font-weight: bold; }
+
+button {    cursor: pointer;}
+
+textarea {    height: 80px;    overflow: auto;    resize: none;}
+/* Termina o Reset */
+
+
+.search .search_bar {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4);
+    background-color: #ffffff;
+}
+
+.search .search_content {
+    width: 100%;
+    height: 76px;
+    margin: 0 auto;
+}
+
+.search .search_content li {
+    width: 0px;
+    height: 70px;
+    float: left;
+    display: table;
+    border-right: 1px solid #ffffff;
+    border-width: 0 1px;
+    vertical-align: middle;
+}
+
+.search .search_content li.item_laboratory:hover,
+.search .search_content li.item_home :hover,
+.search .search_content li.item_medical :hover{
+    background-color: #cfcfcf;
+}
+
+.search .search_content li.item_hospital:hover,.search .search_content li.item_medicines:hover{
+    background-color: #cfcfcf;
+}
+
+.search .search_content li.item_logoff :hover{
+    background-color: #cfcfcf;
+}
+
+.search .search_content li.item_medicines a{
+    width: 188px;
+}
+.search .search_content li.item_hospital a{
+    width: 165px;
+}
+
+
+
+.search .search_content li a {
+    width: 155px;
+    height: 76px;
+    float: left;
+    padding: 15px 0 15px 76px;
+    color: #000;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.search .search_content img{
+    position: absolute;
+    float: left;
+    margin: 9px;
+}
+
+.search .search_content li a:hover {
+    text-decoration: none;
+}
+
+.search .search_content li.item_logoff a,
+.search .search_content li.item_medicines a {
+    line-height: 47px;
+}
+.search .search_content ul{
+    margin-left: 12.55%;
+}
+
+
+
+.screen{
+    height: 900px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px;
+    
+}
+
+
+.epc{ 
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.bd{
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+}
+
+.bdsd{
+    box-shadow: 0 0 15px;
+}
+
+#princ{
+    position: absolute;
+    z-index: 9000;
+}
+
+.logo_txt img{
+    margin-left:35%;
+}
+.logo_columbia{
+    position:relative;
+    top:10px;
+}
+.txt_columbia{
+    font-size:40px;
+    color: #151515;
+    font-family: 'Patua One', cursive;
+    text-shadow:#fff 1px -1px, #fff -1px 1px, #fff 1px 1px, #fff -1px -1px;
+}
+.txt_columbia:hover{
+    text-decoration: none;
+    
+}
+
+/* SLIDE */
+.trs {
+    -webkit-transition:all ease-out 0.5s;
+    -moz-transition:all ease-out 0.5s;
+    -o-transition:all ease-out 0.5s;
+    -ms-transition:all ease-out 0.5s;
+    transition:all ease-out 0.5s;
+}
+		
+#slider {position: relative; z-index: 1;}
+#slider a { position: absolute; top: 0; left: 0; opacity: 0;filter:alpha(opacity=0);}
+.ativo {opacity: 1!important; filter:alpha(opacity=100)!important;}
+		
+		/*controladores*/
+span{
+    background: #fff;
+    cursor: pointer;
+    opacity: 0;
+    filter:alpha(opacity=0);
+    position: absolute;
+    bottom: 40%;
+    width: 43px;
+    height: 43px;
+    z-index: 5;
+}
+/*
+.next {right: 10px;}
+.next:before,.next:after {left: 21px;}
+.next:before {
+    -webkit-transform: rotate(-42deg);
+    top: 5px;
+}
+.next:after {
+    -webkit-transform: rotate(-132deg);
+    top: 19px;
+}
+.next:before,.next:after,.prev:before,.prev:after {
+    content: "";
+    height: 20px;
+    background: #000;
+    width: 1px;
+    position: absolute;
+}
+
+.prev {left: 10px;}
+.prev:before,.prev:after {left: 18px;}
+.prev:before {
+    -webkit-transform: rotate(42deg);
+    top: 5px;
+}
+.prev:after {
+    -webkit-transform: rotate(132deg);
+    top: 19px;
+}
+*/
+
+figure:hover span {opacity: 0.76;filter:alpha(opacity=76);}
+
+figure {
+    max-width: 937px;
+    height: 354px;
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+    left: 150px;
+}
+
+figcaption {
+    padding-left: 15px;
+    color: #000;
+    font-family: 'Patua One', cursive;
+    font-size: 32px;
+    /*background-color: #fff;*/
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 55px;
+    height: 55px;
+    z-index: 5;
+    text-shadow:#fff 1px -1px, #fff -1px 1px, #fff 1px 1px, #fff -1px -1px;
+}
+
+/* BARRA DE ROLAGEM */
+body::-webkit-scrollbar {
+    width: 0.9em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #4f4f4f;
+  outline: 1px solid slategrey;
+}
